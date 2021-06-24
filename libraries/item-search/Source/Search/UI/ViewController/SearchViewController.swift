@@ -12,6 +12,7 @@ import RxCocoa
 protocol SearchViewOutput {
     var results: Observable<[SearchResult]> { get }
     func query(with text: String)
+    func showItem(with data: SearchResult)
 }
 
 final class SearchViewController: UIViewController,
@@ -24,7 +25,6 @@ final class SearchViewController: UIViewController,
         }
     }
     private var searchController : UISearchController!
-
     private var presenter: SearchViewOutput
     private let disposeBag: DisposeBag = DisposeBag()
     private let estimatedRowHeight: CGFloat = CGFloat(72)
@@ -51,12 +51,15 @@ final class SearchViewController: UIViewController,
     }
     
     private func setUp() {
+        navigationController?.navigationBar.barTintColor = Utils.hexStringToUIColor(hex: "#FFE600")
         setUpSearchController()
         setUpTableView()
     }
     
     private func setUpSearchController() {
         searchController = UISearchController(searchResultsController:  nil)
+        searchController.searchBar.textField?.backgroundColor = UIColor.white
+        searchController.searchBar.textField?.placeholder = "Search in Mercado Libre"
         searchController.searchResultsUpdater = self
         searchController.delegate = self
         searchController.searchBar.delegate = self
@@ -85,8 +88,8 @@ final class SearchViewController: UIViewController,
             .itemSelected
             .subscribe(onNext: { [weak self] (indexPath: IndexPath) -> Void in
                 if let cell: SearchResultViewCell = self?.resultsTableView.cellForRow(at: indexPath) as? SearchResultViewCell,
-                   !cell.id.isEmpty {
-                    print(cell.id)
+                   let data: SearchResult = cell.data {
+                    self?.presenter.showItem(with: data)
                 }
             })
             .disposed(by: disposeBag)

@@ -21,11 +21,11 @@ final class SearchResultViewCell: UITableViewCell {
         }
     }
     
-    private(set) var id: String = ""
+    private(set) var data: SearchResult?
     
     func setup(with data: SearchResult) {
         titleLabel.text = data.title
-        id = data.id
+        self.data = data
         if let url = URL(string: data.thumbnail) {
             Nuke.loadImage(with: url, into: previewImageView)
         }

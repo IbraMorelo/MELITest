@@ -31,4 +31,8 @@ final class SearchPresenter: SearchPresenterProtocol, SearchViewOutput {
     func query(with text: String) {
         interactor.findProducts(with: text)
     }
+    
+    func showItem(with data: SearchResult) {
+        wireframe.showItem(with: data)
+    }
 }

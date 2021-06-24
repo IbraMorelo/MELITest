@@ -7,6 +7,7 @@
 
 protocol SearchWireframeProtocol {
     func show(with presenter: SearchViewOutput)
+    func showItem(with data: SearchResult)
 }
 
 final class SearchWireframe: SearchWireframeProtocol {
@@ -17,9 +18,16 @@ final class SearchWireframe: SearchWireframeProtocol {
     }
     
     func show(with presenter: SearchViewOutput) {
-        let viewController = SearchViewController(presenter: presenter)
-        let navigation = UINavigationController(rootViewController: viewController)
-        navigation.modalPresentationStyle = .fullScreen
+        let viewController: SearchViewController = SearchViewController(presenter: presenter)
+        let navigation: UINavigationController = UINavigationController(rootViewController: viewController)
+        navigation.modalPresentationStyle = UIModalPresentationStyle.fullScreen
         baseController?.present(navigation, animated: true)
+    }
+    
+    func showItem(with data: SearchResult) {
+        guard let navigation = baseController?.presentedViewController as? UINavigationController else { return }
+        let item: ItemModuleProtocol = ItemModule(with: navigation,
+                                                  data: data)
+        item.show()
     }
 }

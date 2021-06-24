@@ -11,8 +11,4 @@ enum ServiceDefinitions {
     static func search(site: String, name: String) -> String {
         return String(format: "%@sites/%@/search?q=%@", baseURL, site, name)
     }
-    
-    static func item(id: String) -> String {
-        return String(format: "items?ids=%@", baseURL, id)
-    }
 }
