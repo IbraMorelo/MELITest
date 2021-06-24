@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1391BCE2F692EB30E4E08D74 /* Pods_MELITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610A22EF7BB1DE14E5155290 /* Pods_MELITest.framework */; };
+		63AA6CE4F79AE23046A270D3 /* Pods_MELITest_MELITestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375EDA4677BE9902333A37EE /* Pods_MELITest_MELITestUITests.framework */; };
 		8F9388C8268416DF001B997A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9388C7268416DF001B997A /* AppDelegate.swift */; };
-		8F9388CA268416DF001B997A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9388C9268416DF001B997A /* SceneDelegate.swift */; };
-		8F9388CC268416DF001B997A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9388CB268416DF001B997A /* ViewController.swift */; };
-		8F9388CF268416DF001B997A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9388CD268416DF001B997A /* Main.storyboard */; };
+		8F9388CC268416DF001B997A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9388CB268416DF001B997A /* MainViewController.swift */; };
 		8F9388D1268416E2001B997A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9388D0268416E2001B997A /* Assets.xcassets */; };
 		8F9388D4268416E2001B997A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F9388D2268416E2001B997A /* LaunchScreen.storyboard */; };
 		8F9388DF268416E2001B997A /* MELITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9388DE268416E2001B997A /* MELITestTests.swift */; };
 		8F9388EA268416E2001B997A /* MELITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9388E9268416E2001B997A /* MELITestUITests.swift */; };
+		8F93890C26841A29001B997A /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F93890B26841A29001B997A /* MainModule.swift */; };
+		8F93891626841A72001B997A /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F93891526841A72001B997A /* MainWireframe.swift */; };
+		8F93891E26841A8B001B997A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F93891D26841A8B001B997A /* MainPresenter.swift */; };
+		8F9389872684216C001B997A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F9389862684216C001B997A /* MainViewController.xib */; };
+		A7FD4842196DFBFFB6A81461 /* Pods_MELITestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A488A609B4ABEBE56B11CCC /* Pods_MELITestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030E4D01E1263EC23C316C18 /* Pods-MELITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELITest.debug.xcconfig"; path = "Target Support Files/Pods-MELITest/Pods-MELITest.debug.xcconfig"; sourceTree = "<group>"; };
+		2977779C4F98BF5CC4F9A9AC /* Pods-MELITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELITest.release.xcconfig"; path = "Target Support Files/Pods-MELITest/Pods-MELITest.release.xcconfig"; sourceTree = "<group>"; };
+		375EDA4677BE9902333A37EE /* Pods_MELITest_MELITestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MELITest_MELITestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4591505244669CB9268AA69C /* Pods-MELITestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELITestTests.release.xcconfig"; path = "Target Support Files/Pods-MELITestTests/Pods-MELITestTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A488A609B4ABEBE56B11CCC /* Pods_MELITestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MELITestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		610A22EF7BB1DE14E5155290 /* Pods_MELITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MELITest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9388C4268416DF001B997A /* MELITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MELITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9388C7268416DF001B997A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F9388C9268416DF001B997A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8F9388CB268416DF001B997A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8F9388CE268416DF001B997A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F9388CB268416DF001B997A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8F9388D0268416E2001B997A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F9388D3268416E2001B997A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F9388D5268416E2001B997A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		8F9388E5268416E2001B997A /* MELITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MELITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F9388E9268416E2001B997A /* MELITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MELITestUITests.swift; sourceTree = "<group>"; };
 		8F9388EB268416E2001B997A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F93890B26841A29001B997A /* MainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
+		8F93891526841A72001B997A /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		8F93891D26841A8B001B997A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		8F9389862684216C001B997A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BB152243ED89EFBCC697E4CF /* Pods-MELITest-MELITestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELITest-MELITestUITests.debug.xcconfig"; path = "Target Support Files/Pods-MELITest-MELITestUITests/Pods-MELITest-MELITestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D06617E78C6A9547A6D44BAD /* Pods-MELITestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELITestTests.debug.xcconfig"; path = "Target Support Files/Pods-MELITestTests/Pods-MELITestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6880D8C89DAC0312517DE62 /* Pods-MELITest-MELITestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MELITest-MELITestUITests.release.xcconfig"; path = "Target Support Files/Pods-MELITest-MELITestUITests/Pods-MELITest-MELITestUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1391BCE2F692EB30E4E08D74 /* Pods_MELITest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FD4842196DFBFFB6A81461 /* Pods_MELITestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63AA6CE4F79AE23046A270D3 /* Pods_MELITest_MELITestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3563F882DB529ED6228E67C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				030E4D01E1263EC23C316C18 /* Pods-MELITest.debug.xcconfig */,
+				2977779C4F98BF5CC4F9A9AC /* Pods-MELITest.release.xcconfig */,
+				BB152243ED89EFBCC697E4CF /* Pods-MELITest-MELITestUITests.debug.xcconfig */,
+				F6880D8C89DAC0312517DE62 /* Pods-MELITest-MELITestUITests.release.xcconfig */,
+				D06617E78C6A9547A6D44BAD /* Pods-MELITestTests.debug.xcconfig */,
+				4591505244669CB9268AA69C /* Pods-MELITestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8F9388BB268416DF001B997A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				8F9388DD268416E2001B997A /* MELITestTests */,
 				8F9388E8268416E2001B997A /* MELITestUITests */,
 				8F9388C5268416DF001B997A /* Products */,
+				3563F882DB529ED6228E67C6 /* Pods */,
+				BB045998E15721ABA65EE983 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +133,8 @@
 		8F9388C6268416DF001B997A /* MELITest */ = {
 			isa = PBXGroup;
 			children = (
+				8F93890926841A08001B997A /* Main */,
 				8F9388C7268416DF001B997A /* AppDelegate.swift */,
-				8F9388C9268416DF001B997A /* SceneDelegate.swift */,
-				8F9388CB268416DF001B997A /* ViewController.swift */,
-				8F9388CD268416DF001B997A /* Main.storyboard */,
 				8F9388D0268416E2001B997A /* Assets.xcassets */,
 				8F9388D2268416E2001B997A /* LaunchScreen.storyboard */,
 				8F9388D5268416E2001B997A /* Info.plist */,
@@ -128,6 +160,68 @@
 			path = MELITestUITests;
 			sourceTree = "<group>";
 		};
+		8F93890926841A08001B997A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8F93898426842151001B997A /* UI */,
+				8F93891426841A67001B997A /* Wireframe */,
+				8F93890A26841A15001B997A /* Module */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8F93890A26841A15001B997A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				8F93890B26841A29001B997A /* MainModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		8F93891326841A61001B997A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8F93891D26841A8B001B997A /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8F93891426841A67001B997A /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				8F93891526841A72001B997A /* MainWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		8F93898426842151001B997A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8F9389852684215D001B997A /* ViewController */,
+				8F93891326841A61001B997A /* Presenter */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8F9389852684215D001B997A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F9388CB268416DF001B997A /* MainViewController.swift */,
+				8F9389862684216C001B997A /* MainViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BB045998E15721ABA65EE983 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				610A22EF7BB1DE14E5155290 /* Pods_MELITest.framework */,
+				375EDA4677BE9902333A37EE /* Pods_MELITest_MELITestUITests.framework */,
+				4A488A609B4ABEBE56B11CCC /* Pods_MELITestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F9388EE268416E2001B997A /* Build configuration list for PBXNativeTarget "MELITest" */;
 			buildPhases = (
+				2D122719C9C01CEEC0F70875 /* [CP] Check Pods Manifest.lock */,
 				8F9388C0268416DF001B997A /* Sources */,
 				8F9388C1268416DF001B997A /* Frameworks */,
 				8F9388C2268416DF001B997A /* Resources */,
+				10971E2F4CCE23D91B0F72F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F9388F1268416E2001B997A /* Build configuration list for PBXNativeTarget "MELITestTests" */;
 			buildPhases = (
+				23CFE850075DBF193846BCD2 /* [CP] Check Pods Manifest.lock */,
 				8F9388D6268416E2001B997A /* Sources */,
 				8F9388D7268416E2001B997A /* Frameworks */,
 				8F9388D8268416E2001B997A /* Resources */,
@@ -170,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F9388F4268416E2001B997A /* Build configuration list for PBXNativeTarget "MELITestUITests" */;
 			buildPhases = (
+				A62AEC06FAE703BBACDB93F7 /* [CP] Check Pods Manifest.lock */,
 				8F9388E1268416E2001B997A /* Sources */,
 				8F9388E2268416E2001B997A /* Frameworks */,
 				8F9388E3268416E2001B997A /* Resources */,
+				5B3487703C99ED32B4912DF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +331,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F9388D4268416E2001B997A /* LaunchScreen.storyboard in Resources */,
+				8F9389872684216C001B997A /* MainViewController.xib in Resources */,
 				8F9388D1268416E2001B997A /* Assets.xcassets in Resources */,
-				8F9388CF268416DF001B997A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +352,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10971E2F4CCE23D91B0F72F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELITest/Pods-MELITest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELITest/Pods-MELITest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MELITest/Pods-MELITest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23CFE850075DBF193846BCD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MELITestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D122719C9C01CEEC0F70875 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MELITest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B3487703C99ED32B4912DF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELITest-MELITestUITests/Pods-MELITest-MELITestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MELITest-MELITestUITests/Pods-MELITest-MELITestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MELITest-MELITestUITests/Pods-MELITest-MELITestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A62AEC06FAE703BBACDB93F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MELITest-MELITestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F9388C0268416DF001B997A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F9388CC268416DF001B997A /* ViewController.swift in Sources */,
+				8F93891E26841A8B001B997A /* MainPresenter.swift in Sources */,
+				8F9388CC268416DF001B997A /* MainViewController.swift in Sources */,
+				8F93891626841A72001B997A /* MainWireframe.swift in Sources */,
+				8F93890C26841A29001B997A /* MainModule.swift in Sources */,
 				8F9388C8268416DF001B997A /* AppDelegate.swift in Sources */,
-				8F9388CA268416DF001B997A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +500,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8F9388CD268416DF001B997A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8F9388CE268416DF001B997A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8F9388D2268416E2001B997A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +629,7 @@
 		};
 		8F9388EF268416E2001B997A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 030E4D01E1263EC23C316C18 /* Pods-MELITest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +648,7 @@
 		};
 		8F9388F0268416E2001B997A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2977779C4F98BF5CC4F9A9AC /* Pods-MELITest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +667,7 @@
 		};
 		8F9388F2268416E2001B997A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D06617E78C6A9547A6D44BAD /* Pods-MELITestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +689,7 @@
 		};
 		8F9388F3268416E2001B997A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4591505244669CB9268AA69C /* Pods-MELITestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +711,7 @@
 		};
 		8F9388F5268416E2001B997A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB152243ED89EFBCC697E4CF /* Pods-MELITest-MELITestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +731,7 @@
 		};
 		8F9388F6268416E2001B997A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6880D8C89DAC0312517DE62 /* Pods-MELITest-MELITestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

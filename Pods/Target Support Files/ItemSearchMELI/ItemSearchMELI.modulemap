@@ -1,0 +1,6 @@
+framework module ItemSearchMELI {
+  umbrella header "ItemSearchMELI-umbrella.h"
+
+  export *
+  module * { export * }
+}

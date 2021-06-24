@@ -1,0 +1,55 @@
+{
+  "name": "ItemSearchMELI",
+  "version": "0.0.1",
+  "summary": "ItemSearchMELI iOS.",
+  "description": "Module to Test in MELI!",
+  "homepage": "https://github.com/IbraMorelo/MELITest.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ibra.morelo": "ibramorelo@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/IbraMorelo/MELITest.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "default_subspecs": "Core",
+  "swift_versions": "5.0",
+  "pod_target_xcconfig": {
+    "SWIFT_VERSION": "5.0"
+  },
+  "resource_bundles": {
+    "ItemSearchMELIResources": [
+      "Assets/LocalizedStrings/*.lproj/*.strings",
+      "Assets/LocalizedStrings/*.lproj/*.stringsdict",
+      "Assets/Images.xcassets",
+      "Assets/**/*.{storyboard,xib,json}"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Source/**/*",
+      "dependencies": {
+        "Alamofire": [
+
+        ],
+        "RxSwift": [
+
+        ],
+        "RxCocoa": [
+
+        ],
+        "Nuke": [
+
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}
