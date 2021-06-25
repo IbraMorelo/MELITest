@@ -23,19 +23,33 @@
   "pod_target_xcconfig": {
     "SWIFT_VERSION": "5.0"
   },
-  "resource_bundles": {
-    "ItemSearchMELIResources": [
-      "Assets/LocalizedStrings/*.lproj/*.strings",
-      "Assets/LocalizedStrings/*.lproj/*.stringsdict",
-      "Assets/Images.xcassets",
-      "Assets/**/*.{storyboard,xib,json}"
-    ]
-  },
+  "testspecs": [
+    {
+      "name": "Tests",
+      "test_type": "unit",
+      "dependencies": {
+        "ItemSearchMELI/Core": [
+
+        ],
+        "RxBlocking": [
+
+        ]
+      },
+      "source_files": "Tests/**/*.{h,m,swift}",
+      "ios": {
+        "resources": [
+          "Tests/**/*.{json}"
+        ]
+      }
+    }
+  ],
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "Source/**/*",
       "dependencies": {
+        "ItemSearchMELI/Resources": [
+
+        ],
         "Alamofire": [
 
         ],
@@ -47,6 +61,18 @@
         ],
         "Nuke": [
 
+        ]
+      },
+      "source_files": "Source/**/*"
+    },
+    {
+      "name": "Resources",
+      "resource_bundles": {
+        "ItemSearchMELIResources": [
+          "Assets/LocalizedStrings/*.lproj/*.strings",
+          "Assets/LocalizedStrings/*.lproj/*.stringsdict",
+          "Assets/Images.xcassets",
+          "Assets/**/*.{storyboard,xib,json}"
         ]
       }
     }

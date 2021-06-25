@@ -28,18 +28,20 @@ Module to Test in MELI!
   
   s.ios.deployment_target = '11.0'
   s.default_subspec = 'Core'
-    s.swift_version         = '5.0'
-    s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '5.0' }
-    s.default_subspec = 'Core'
-    s.subspec "Core" do |ss|
-        ss.source_files = 'Source/**/*'
-        ss.dependency 'Alamofire'
-        ss.dependency 'RxSwift'
-        ss.dependency 'RxCocoa'
-        ss.dependency 'Nuke'
-    end
+  s.swift_version         = '5.0'
+  s.pod_target_xcconfig   = { 'SWIFT_VERSION' => '5.0' }
+  s.default_subspec = 'Core'
+  s.subspec "Core" do |ss|
+    ss.dependency 'ItemSearchMELI/Resources'
+    ss.source_files = 'Source/**/*'
+    ss.dependency 'Alamofire'
+    ss.dependency 'RxSwift'
+    ss.dependency 'RxCocoa'
+    ss.dependency 'Nuke'
+  end
 
-    s.resource_bundles      = { 
+  s.subspec "Resources" do |ss|
+    ss.resource_bundles      = { 
       'ItemSearchMELIResources' => [
         'Assets/LocalizedStrings/*.lproj/*.strings',
         'Assets/LocalizedStrings/*.lproj/*.stringsdict',
@@ -47,4 +49,11 @@ Module to Test in MELI!
         'Assets/**/*.{storyboard,xib,json}'
       ]
     } 
+  end
+
+  s.test_spec 'Tests' do |ss|
+    ss.dependency 'ItemSearchMELI/Core'
+    ss.source_files = 'Tests/**/*.{h,m,swift}'
+    ss.ios.resources = ['Tests/**/*.{json}']
+  end
 end

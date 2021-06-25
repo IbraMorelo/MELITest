@@ -28,7 +28,7 @@ final class SearchInteractor: SearchInteractorProtocol {
             .findProducts(with: text, onSuccess: { [weak self] (search: Search) -> Void in
                 self?.resultsSubject.onNext(search.results)
             }, onError: { () -> Void in
-                print("Ibra Error")
+                print("Error")
             })
     }
 }

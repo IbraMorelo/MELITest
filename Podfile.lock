@@ -4,10 +4,17 @@ PODS:
     - ItemSearchMELI/Core (= 0.0.1)
   - ItemSearchMELI/Core (0.0.1):
     - Alamofire
+    - ItemSearchMELI/Resources
     - Nuke
     - RxCocoa
     - RxSwift
+  - ItemSearchMELI/Resources (0.0.1)
+  - ItemSearchMELI/Tests (0.0.1):
+    - ItemSearchMELI/Core
+    - RxBlocking
   - Nuke (9.5.0)
+  - RxBlocking (6.2.0):
+    - RxSwift (= 6.2.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
@@ -18,7 +25,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.4)
   - ItemSearchMELI (from `libraries/item-search`)
+  - ItemSearchMELI/Tests (from `libraries/item-search`)
   - Nuke (~> 9.0)
+  - RxBlocking (= 6.2.0)
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
 
@@ -26,6 +35,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Nuke
+    - RxBlocking
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -36,12 +46,13 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
-  ItemSearchMELI: b078edb6aef30a0fb2e798a06d398e38fbc75779
+  ItemSearchMELI: 6c6edeed5e9be91264d79c098d365d33ee9d34f1
   Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
+  RxBlocking: 0b29f7d2079109a8de49c411381bed7c33ef1eeb
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
-PODFILE CHECKSUM: 37c44e3eeff4dde121fdcbe4c60ab21ecdba657a
+PODFILE CHECKSUM: 5451c24e6d9fa9e0b57869b5df96b8ac9d40b45e
 
 COCOAPODS: 1.10.1

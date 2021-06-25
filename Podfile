@@ -10,7 +10,7 @@ target 'MELITest' do
   pod 'RxSwift', '6.2.0'
   pod 'RxCocoa', '6.2.0'
   pod 'Nuke', '~> 9.0'
-  pod 'ItemSearchMELI', :path => 'libraries/item-search'
+  pod 'ItemSearchMELI', :path => 'libraries/item-search', :testspecs => ['Tests']
 
   target 'MELITestTests' do
     inherit! :search_paths
